@@ -904,6 +904,13 @@ void MainWindow::updateMenuActionState()
     m_ui->actionEntryClone->setEnabled(singleEntrySelected && !inRecycleBin);
     m_ui->actionEntryEdit->setEnabled(singleEntrySelected);
     m_ui->actionEntryDelete->setEnabled(multiEntrySelected);
+    if (multiEntrySelected) {
+        auto deleteActionText = dbWidget->isRecycleBinEnabled() && !inRecycleBin ?
+            tr("Move Entry(s) to Recylce Bin", "", dbWidget->numberOfSelectedEntries()) :
+            tr("Delete Entry(s)…", "", dbWidget->numberOfSelectedEntries());
+        m_ui->actionEntryDelete->setText(deleteActionText);
+        m_ui->actionEntryDelete->setToolTip(deleteActionText);
+    }
     m_ui->actionEntryRestore->setVisible(multiEntrySelected && inRecycleBin);
     m_ui->actionEntryRestore->setEnabled(multiEntrySelected && inRecycleBin);
     if (dbWidget) {

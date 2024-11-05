@@ -2515,6 +2515,11 @@ void DatabaseWidget::hideMessage()
     }
 }
 
+bool DatabaseWidget::isRecycleBinEnabled() const
+{
+    return m_db->metadata()->recycleBinEnabled();
+}
+
 bool DatabaseWidget::isRecycleBinSelected() const
 {
     auto group = currentGroup();

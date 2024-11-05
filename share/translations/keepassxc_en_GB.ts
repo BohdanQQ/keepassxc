@@ -5506,6 +5506,10 @@ We recommend you use the AppImage available on our downloads page.</translation>
         <source>Restore Entry(s)</source>
         <translation><numerusform>Restore Entry</numerusform><numerusform>Restore Entries</numerusform></translation>
     </message>
+    <message numerus="yes">
+        <source>Move Entry(s) to Recylce Bin</source>
+        <translation><numerusform>Move Entry to Recylce Bin</numerusform><numerusform>Move Entries to Recylce Bin</numerusform></translation>
+    </message>
     <message>
         <source>Settings</source>
         <translation>Settings</translation>

@@ -98,6 +98,7 @@ public:
     bool canCloneCurrentGroup() const;
     bool canDeleteCurrentGroup() const;
     bool isGroupSelected() const;
+    bool isRecycleBinEnabled() const;
     bool isRecycleBinSelected() const;
     int numberOfSelectedEntries() const;
     int currentEntryIndex() const;
