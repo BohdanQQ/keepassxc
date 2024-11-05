@@ -5510,6 +5510,10 @@ We recommend you use the AppImage available on our downloads page.</translation>
         <source>Move Entry(s) to Recylce Bin</source>
         <translation><numerusform>Move Entry to Recylce Bin</numerusform><numerusform>Move Entries to Recylce Bin</numerusform></translation>
     </message>
+    <message numerus="yes">
+        <source>Delete Entry(s)…</source>
+        <translation><numerusform>Delete Entry…</numerusform><numerusform>Delete Entries…</numerusform></translation>
+    </message>
     <message>
         <source>Settings</source>
         <translation>Settings</translation>
